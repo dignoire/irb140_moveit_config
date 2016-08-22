@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: irb140
+    relative_path: robots/abb_irb140.urdf.xacro
+  SRDF:
+    relative_path: config/irb140.srdf
+  CONFIG:
+    generated_timestamp: 1471866505

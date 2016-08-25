@@ -1,5 +1,6 @@
 <launch>
 
+  <arg name="load_table" default="false" />
   <!-- By default, we do not start a database (it can be large) -->
   <arg name="db" default="false" />
   <!-- Allow user to specify database location -->
@@ -16,8 +17,12 @@
   <!-- If needed, broadcast static tf for robot root -->
   <arg name="sim" default="true"/>
 
-  <include if="$(arg sim)" file="$(find irb140)/launch/irb140_gazebo.launch"/>
-  <include unless="$(arg sim)" file="$(find irb140)/launch/irb140_hardware.launch"/>
+  <include if="$(arg sim)" file="$(find irb140)/launch/irb140_gazebo.launch">
+    <arg name="load_table" value="$(arg load_table)" />
+  </include>
+  <include unless="$(arg sim)" file="$(find irb140)/launch/irb140_hardware.launch">
+    <arg name="load_table" value="$(arg load_table)" />
+  </include>
 
   <!-- We do not have a robot connected, so publish fake joint states -->
   <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">

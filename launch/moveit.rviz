@@ -97,6 +97,20 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          fixation_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          table_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wall_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           world:
             Alpha: 1
             Show Axes: false
@@ -179,6 +193,20 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          fixation_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          table_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wall_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           world:
             Alpha: 1
             Show Axes: false
@@ -232,6 +260,20 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        fixation_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        table_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wall_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         world:
           Alpha: 1
           Show Axes: false
@@ -242,6 +284,54 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        Link1:
+          Value: true
+        Link2:
+          Value: true
+        Link3:
+          Value: true
+        Link4:
+          Value: true
+        Link5:
+          Value: true
+        Link6:
+          Value: true
+        base_link:
+          Value: true
+        fixation_link:
+          Value: true
+        table_link:
+          Value: true
+        wall_link:
+          Value: true
+        world:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: true
+      Tree:
+        world:
+          table_link:
+            fixation_link:
+              base_link:
+                Link1:
+                  Link2:
+                    Link3:
+                      Link4:
+                        Link5:
+                          Link6:
+                            {}
+          wall_link:
+            {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -257,7 +347,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.9965
+      Distance: 3.9173
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
@@ -269,10 +359,10 @@ Visualization Manager:
         Z: 2.23518e-07
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.509797
+      Pitch: 0.314797
       Target Frame: world
       Value: XYOrbit (rviz)
-      Yaw: 5.65995
+      Yaw: 4.74991
     Saved: ~
 Window Geometry:
   Displays:
@@ -288,5 +378,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1855
-  X: 55
-  Y: -14
+  X: 65
+  Y: 24
